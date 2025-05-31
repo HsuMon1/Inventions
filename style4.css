@@ -1,0 +1,211 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: "Inter", sans-serif;
+   background: linear-gradient(to bottom, #e0f2fe, #f8fafc);
+   color: #1e293b;
+   line-height: 1.6;
+}
+
+a{
+   text-decoration: none;
+   color: inherit
+}
+
+/* Layout */
+.container{
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+}
+
+/* Logo */
+.logo{
+   width: 80px;
+   height: auto;
+   margin-bottom: 10px;
+   float: left;
+}
+
+/* Header */
+.header{
+   background-color: #0f172a;
+   color: white;
+   text-align: center;
+   padding: 25px 0;
+}
+
+.header h1{
+   margin: 0;
+   font-size: 2.5rem;
+}
+
+nav{
+   margin-top: 10px;
+}
+
+nav a{
+   color: white;
+   text-decoration: none;
+   margin: 0 15px;
+   font-weight: bold;
+}
+
+.header nav a:hover,
+.header nav a.active{
+   background-color: #2563eb;
+   color: white;
+   text-decoration: underline;
+}
+
+/* Hero */
+.hero{
+   position: relative;
+   height: 60vh;
+   overflow: hidden;
+}
+
+.hero-image{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(60%);
+}
+
+.hero-text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   background-color: rgba( 0, 0, 0, 0.4);
+   padding: 30px 40px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.hero-text h2{
+   font-size: 36px;
+}
+
+.hero-text p{
+   font-size: 18px;
+}
+
+/* Contect Section */
+.home-contect{
+   padding: 40px 0;
+}
+
+.home-contect section{
+   margin-bottom: 50px;
+}
+
+.home-contect h2{
+   font-size: 26px;
+   margin-bottom: 10px;
+   color: #1d4ed8;
+}
+
+/* Cards */
+.cards{
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+
+.card{
+   background: white;
+   box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.1);
+   border-radius: 10px;
+   overflow: hidden;
+   width: 100%;
+   max-width: 350px;
+   transition: transform 0.3s;
+}
+
+.card img{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+}
+
+.card h3{
+   padding: 15px;
+   font-size: 20px;
+   color: #0f172a;
+}
+.card p{
+   padding: 0 15px 20px;
+   color: #475569;
+}
+
+.card:hover{
+   transform: scale(1.03);
+}
+
+/* Quote */
+.quote{
+   text-align: center;
+   font-style: italic;
+   padding: 30px;
+   background-color: #f1f5f9;
+   border-left: 4px solid #3b82f6;
+   margin-top: 40px;
+}
+
+.quote span{
+   display: block;
+   margin-top: 10px;
+   font-style: normal;
+   font-weight: 600;
+}
+
+/* Call to Action */
+.cta{
+   text-align: center;
+   background: #1d4ed8;
+   color: white;
+   padding: 40px 20px;
+   border-radius: 12px;
+}
+
+.cta .button{
+   display: inline-block;
+   background: white;
+   color: #1d4ed8;
+   padding: 10px 25px;
+   font-weight: 600;
+   border-radius: 6px;
+   margin: 15px;
+   transition: background 0.3s;
+}
+
+.cta .button:hover{
+   background: #dbeafe;
+}
+
+/* Footer */
+.footer{
+   background-color: #0f172a;
+   color: #9ca3af;
+   text-align: center;
+   padding: 20px;
+   font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+   .hero-text h2{
+      font-size: 26px;
+   }
+   .cards{
+      flex-direction: column;
+      align-items: center;
+   }
+}
